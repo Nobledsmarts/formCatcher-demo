@@ -8,8 +8,6 @@ html, body{
 	height: 100%;
 }
 body {
-	height: inherit;
-	width: inherit;
 	background: #ccc;
 	font-size: 16px;
 	display: flex;
@@ -51,13 +49,15 @@ body {
 #success, #error{
 	padding: 10px;
 	margin: 15px;
-	color: #1f10b6;
+	/* color: #1f10b6; */
 }
 #success{
-	background : #00bcd45e;
+	background : #00bcd43b;
+	color: #0d5356;
 }
 #error{
 	background: #d5127a4a;
+	color: #4e0f30;
 }
 .form-title{
 	padding: 10px 15px;
@@ -69,7 +69,7 @@ body {
 	width: 100%;
 	background:  #393283;
 }
-.error_list{
+.error_list, .success_list{
 	padding: 10px;
 	margin: 0px;
 	text-transform: capitalize;

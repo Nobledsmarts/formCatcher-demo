@@ -38,7 +38,12 @@ let rules = {
     signup_rules : {
         password : {
             length_rule(value, formData){
-
+                let min_len = (value.length < 4);
+                if( min_len ){
+                    return {
+                        error : "password is too short!"
+                    }
+                }
             }
         },
         username : {
