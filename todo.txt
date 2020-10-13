@@ -1,0 +1,3 @@
+ required_with|required_without|valid_url|valid_date|differs[]|valid_email|permit_empty|regex_match[]|exact_length
+
+file : "max_sixe[field, 2048]|max_dims[field, 300, 150]|mime_in[field, image/png, image/jpg]|ext_in[field, png, jpg, gif]|is_image[field_name]",

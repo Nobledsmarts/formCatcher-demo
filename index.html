@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="libs/formCatcher.js"></script>
+	<script src="js/rules.js"></script>
+	<script src="js/fn.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="validation-cont">
+		<div class="form-title-cont">
+			<div class="form-title">
+				<h3>FormCatcher</h3>
+			</div>
+		</div>
+		<div class="error_cont" id="error_cont">
+			<div id="error">
+				error hereerror hereerror here
+			</div>
+		</div>
+		<div class="success_cont" id="success_cont">
+			<div id="success">
+				you are good to go!
+			</div>
+		</div>
+		<form onsubmit="form()">
+			<input type="text" name="username" placeholder="Enter username" value="">
+			<input type="text" name="password" placeholder="Enter password">
+			<input type="text" name="password1" placeholder="Enter repeat password">
+			<input type="text" name="email" placeholder="Enter your email">
+			<br>
+			<input type="submit" value="submit">
+		</form>
+	</div>
+</body>
+</html>
