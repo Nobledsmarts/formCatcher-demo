@@ -240,8 +240,8 @@ class FormCatcher{
             },
             in_list :  {
                 run : () => {
-                    let list = field.split(',').map((el) => el.trim());
-                    return list.includes(inputValue);
+                    let list = field.split(',').map((el) => el.toLowerCase().trim());
+                    return list.includes(inputValue.toLowerCase());
                 },
                 error : (key, formDara) => {
                     return key + " error ";
